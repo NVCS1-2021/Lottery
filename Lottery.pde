@@ -19,7 +19,13 @@ public void draw() {
 }
 
 private void calcWinner() {
-  if (player1Ball.value > player2Ball.value || false) {
+  if (player1Ball.colorName == "red") {
+    text("Player 1 Wins",width/2,height/2);
+  }
+  else if (player2Ball.colorName == "red") {
+    text("Player 2 Wins",width/2,height/2);
+  }
+  else if (player1Ball.value > player2Ball.value) {
     text("Player 1 Wins",width/2,height/2);
   }
   else if (player2Ball.value > player1Ball.value) {
